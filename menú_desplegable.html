@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="shortcut icon" href="imagenes/icons/favicon1.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="dist/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <script src="dist/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/style2.css">
+    <script type="text/javascript" src="js/proyecto.js"></script>
+    <script type="text/javascript" src="js/formulario.js"></script>
+    <script type="text/javascript">
+        var nombre;
+        
+        nombre=prompt('Ingresa tu Nombre ', '');
+        
+        </script>
+</head>
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark" data-bs-theme="dark">
+
+        <div class="container-fluid">
+            <a href="menú_desplegable.html" class="navbar-brand">
+                <img src="imagenes/icons/favicon1.png" alt="Logotipo" width="30">
+                RuizGaytan BR
+            </a>
+            <button class="navbar-toggler" type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#MenuContenido"
+            aria-cotrols="MenuContenido"    
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="MenuContenido">
+                <ul class="navbar-nav">
+                    <li class="nav-item" id="seccion1" onmouseover="ver(1)" onmouseout="ocultar(1)">
+                        <a class="nav-link" href="Pagina_principal.html" >Página principal</a>
+                        <div id="subseccion1">
+                            <p><a href="Pagina_principal.html" >Actualizar página principal</a></p>
+                            <p><a href="Pagina_principal.html">Proyectos</a></p>
+                            <p><a href="Requisitos_proyecto.html">Requisitos</a></p>
+                        </div>
+                    </li>
+                    <li class="nav-item" id="seccion2" onmouseover="ver(2)" onmouseout="ocultar(2)">
+                        <a class="nav-link" href="Acerca_De.html" >Acerca de</a>
+                        <div id="subseccion2">
+                            <p><a href="Acerca_De.html">Informacion secundaria</a></p>
+                            <p><a href="Acerca_De.html">Enlaces</a></p>
+                            
+                            </div>
+                    </li>
+                    <li class="nav-item" id="seccion3" onmouseover="ver(3)" onmouseout="ocultar(3)" >
+                        <a class="nav-link" href="Formulario.html" onclick="bienvenida()">Formulario</a>
+                        <div id="subseccion3">
+                            
+                            <p><a href="Formulario.html"onclick="bienvenida()">Comentarios</a></p>
+                            
+                            </div>
+                    </li>
+                    <li class="nav-item" id="seccion4" onmouseover="ver(4)" onmouseout="ocultar(4)">
+                        <a class="nav-link" href="seccion_imagenes.html" >Sección Imagenes</a>
+                        <div id="subseccion4">
+                            <p><a href="seccion_imagenes.html">Imagenes</a></p>
+                            
+                            </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        </nav>
+        
+    </header>
+    <main>
+        <h1 class="BIENVENIDO">BIENVENIDO</h1> 
+        <h2 class="nombreprincipal"><script>document.write( nombre);</script></h2>
+        <iframe id="Contenido" name="Contenido">
+            
+        </iframe>
+
+
+</main>
+<footer>
+    <div class="container">
+        &copy;2023 | RuizGaytan | BienesRaíces
+
+    </div>
+
+</footer>
+</body>
+</html>

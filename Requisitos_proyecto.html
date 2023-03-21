@@ -1,0 +1,82 @@
+<html>
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<style>
+  body {
+    background-image: url('imagenes/fondo.jpg');
+
+   color: #e4e4ec;
+   font-family: fantasy;}
+
+   ul {
+   text-shadow: 7px 4px 5px blue;}
+
+   h1 {
+     color: #4fd25c;
+     float: center;
+   }
+   /* estilo de mensajes */
+           .info{background:#4282b8 url(imagenes/info.png);}
+           .info2{background:#275aa1 url(imagenes/info.png);}
+           .suseso{background:#d0d0d0 url(imagenes/suseso.png);}
+           .suseso2{background:#f4f4f4 url(imagenes/suseso.png);}
+           .alerta{background:#ffaf1f url(imagenes/alerta.png);}
+           .alerta2{background:#fe8101 url(imagenes/alerta.png);}
+           .error{background:#cb0101 url(imagenes/error.png);}
+           .error2{background:#e11012 url(imagenes/error.png);}
+           .validacion{background:#32c622 url(imagenes/ok.png);}
+           .validacion2{background:#0ea200 url(imagenes/ok.png);}
+</style>
+<body>
+  <h1> REQUISITOS </h1>
+  <ol >
+
+  <li> Tema Libre </li>
+  <li> Menú </li>
+  <li> Carpeta General de Proyecto</li>
+  <li> Carpeta código CSS
+  <ul>
+    <li> Colores </li>
+    <li> Tipos de letras </li>
+    <li> Fondos</li>
+    </li>
+  </ul>
+
+  <li> Carpeta código JavaScript
+<ul>
+  <form>
+    <br>
+    <li><input type="button" value="Botones" onClick="openwindow()"></li>
+    <br>
+    <li><input type="button" value="Utilizar prompt" onClick="promp()"> </li>
+    <br>
+    <li><input type="button" value="Alertas" onClick="alertas()"> </li>
+    <br>
+    <li><input type="button" value="Enlace multidireccional" onClick="enlace()"></li>
+    <br>
+    <li><input type="button" value="Sección Imagenes" onClick="sec_imag()"> </li>
+    <br>
+    <li><input type="button" value="Oculta y muestra Información" onClick="ocu_muesinf()"> </li>
+  <br>
+      </form></ul></li>
+
+  <li> Carpeta Imagenes </li>
+</ol>
+<input type="button" value="mensaje de informacion" onclick="mensajes('mostrar','info')">
+<input type="button" value="mensaje de suseso" onclick="mensajes('mostrar','suseso')">
+<input type="button" value="mensaje de alerta" onclick="mensajes('mostrar','alerta')">
+<input type="button" value="mensaje de error" onclick="mensajes('mostrar','error')">
+<input type="button" value="mensaje de validacion" onclick="mensajes('mostrar','validacion')">
+<br><br>
+
+ <!---mensajes--->
+<div id="info"   onclick="mensajes('ocultar','info')">mensaje de informacion</div>
+<div id="suseso" onclick="mensajes('ocultar','suseso')">mensaje de suseso</div>
+ <div id="alerta"   onclick="mensajes('ocultar','alerta')">mensaje de alerta</div>
+<div id="error" onclick="mensajes('ocultar','error')">mensaje de error</div>
+<div id="validacion" onclick="mensajes('ocultar','validacion')">mensaje de validacion</div>
+<script type="text/javascript" src="/js/proyecto.js">
+
+</script>
+
+    </body>
+  </html>

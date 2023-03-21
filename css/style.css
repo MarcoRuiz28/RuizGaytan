@@ -1,0 +1,70 @@
+
+ body {
+   background-image:  linear-gradient(30deg, #e4e5e673, #012aa64b),url(/imagenes/fondomarco.jpg) ;
+   background-repeat: repeat;
+   background-position: center;
+   background-size: cover;
+   
+
+ }
+
+p{
+  font-weight: bolder;
+}
+ label{
+  font-weight: bolder;
+ }
+#subseccion1, #subseccion2, #subseccion3, #subseccion4{
+             position: absolute;
+             background-color: #363636; 
+             font-size: 0.9em;
+             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+             
+             padding: 0.2em 0.5em ; 
+             display: none; }
+
+            
+
+.borrar { clear: both; }
+
+#principal h2 { font: bold 1.5em arial; padding: 0.5em;
+background-color: #7cd21b; }
+#principal p { font: normal 0.9em arial; text-align: justify;
+           text-indent: 3em; padding: 0.5em 2em;
+         }
+         /* estilo general de mensajes */
+         div#info, div#suseso, div#alerta, div#error, div#validacion {
+         display:none;
+         cursor: pointer;
+         color:#000;
+         font: 14px/100% Arial, Helvetica, sans-serif;
+             margin: 10px 0px;
+             padding:15px 10px 15px 70px;
+             background-repeat: no-repeat;
+             background-position: 10px center;
+         	border:dimgray 1px solid;
+         	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+         	-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;
+         }
+
+         #Contenido {
+          width: 100%;
+          height: calc(100vh - 69px);
+          border: 0px;
+          /* margin-top: 65px; */
+      }
+
+      .BIENVENIDO{
+        text-align: center;
+        color: rgb(40, 40, 41);
+      }
+
+      .galeria{
+        color: aliceblue;
+      }
+
+      .registro{
+        color: aliceblue;
+      }
+
+      

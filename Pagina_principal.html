@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="shortcut icon" href="imagenes/icons/favicon1.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="dist/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <script src="dist/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/style2.css">
+    <script type="text/javascript" src="js/proyecto.js"></script>
+    <script type="text/javascript" src="js/formulario.js"></script>
+</head>
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark" data-bs-theme="dark">
+
+        <div class="container-fluid">
+            <a href="menú_desplegable.html" class="navbar-brand">
+                <img src="imagenes/icons/favicon1.png" alt="Logotipo" width="30">
+                RuizGaytan BR
+            </a>
+            <button class="navbar-toggler" type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#MenuContenido"
+            aria-cotrols="MenuContenido"    
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="MenuContenido">
+                <ul class="navbar-nav">
+                    <li class="nav-item" id="seccion1" onmouseover="ver(1)" onmouseout="ocultar(1)">
+                        <a class="nav-link" href="Pagina_principal.html" >Página principal</a>
+                        <div id="subseccion1">
+                            <p><a href="Pagina_principal.html" >Actualizar página principal</a></p>
+                            <p><a href="#Proyectos">Proyectos</a></p>
+                            <p><a href="Requisitos_proyecto.html">Requisitos</a></p>
+                        </div>
+                    </li>
+                    <li class="nav-item" id="seccion2" onmouseover="ver(2)" onmouseout="ocultar(2)">
+                        <a class="nav-link" href="Acerca_De.html" >Acerca de</a>
+                        <div id="subseccion2">
+                            <p><a href="Acerca_De.html" >Informacion secundaria</a></p>
+                            <p><a href="Acerca_De.html">Enlaces</a></p>
+                            
+                            </div>
+                    </li>
+                    <li class="nav-item" id="seccion3" onmouseover="ver(3)" onmouseout="ocultar(3)">
+                        <a class="nav-link" href="Formulario.html" onclick="bienvenida()">Formulario</a>
+                        <div id="subseccion3">
+                            
+                            <p><a href="Formulario.html" onclick="bienvenida()">Comentarios</a></p>
+                            
+                            </div>
+                    </li>
+                    <li class="nav-item" id="seccion4" onmouseover="ver(4)" onmouseout="ocultar(4)">
+                        <a class="nav-link" href="seccion_imagenes.html" >Sección Imagenes</a>
+                        <div id="subseccion4">
+                            <p><a href="seccion_imagenes.html">Imagenes</a></p>
+                            
+                            </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        </nav>
+        
+    </header>
+    <main>
+       
+        
+        
+        <div class="mb-5">
+         <div id="Banner">
+             <div class="container pt-5 pb-5" >
+                 <h1>Bienes Raíces</h1>
+                 <p>Los bienes son las propiedades o riquezas que pertenecen a una persona o grupo y raíces, se refiere a que está arraigado a la tierra.
+                    <br>
+                    Por lo tanto bienes inmuebles o bienes raíces, son las propiedades que no pueden moverse del lugar en el que están, están arraigadas a la tierra físicamente, unidas al suelo de forma física y jurídica o legalmente están asignados a un dueño en un registro público.</p>
+                 
+                 <button class="btn btn-success">Saber mas...</button>
+             </div>
+             </div>
+        </div>
+
+        <section id="Proyectos" class="mb-5">
+        
+            <div class="container">
+                <h2 class="registro">Proyectos</h2>
+                <p>Una muestra del compromiso de la empresa y el agradecimiento por parte de nuestros clientes, los cuales nos permiten compartir su experiencia a través de una breve reseña del proyecto</p>
+                <div class="row">
+                    <div class="col">
+                        <div class="card mb-3">
+                            <img class="card-img-top" src="imagenes/casa1_sm.jpg" srcset="imagenes/casa1_sm.jpg 480w, imagenes/casa1_md.jpg 800w" alt="San Pedro">
+                            <div class="card-body">
+                                <h5>San Pedro</h5>
+                                <p id="contenidos_1">San Pedro Garza García es una ciudad y a su vez uno de los cincuenta y un municipios en que se divide el estado mexicano de Nuevo León. Forma parte del área metropolitana de Monterrey. Se ha consolidado como una zona de alto poder adquisitivo.</p>
+                                 <a id="enlace_1" href="#" onclick="muestraOculta('1'); return false;">Ocultar contenido</a>
+                            </div>
+                                
+                                </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-3">
+                            <img class="card-img-top" src="imagenes/casa2_sm.jpg" srcset="imagenes/casa2_sm.jpg 480w, imagenes/casa2_md.jpg 800w" alt="Cumbres">
+                            <div class="card-body">
+                                <h5>Cumbres</h5>
+                                <p id="contenidos_2">Clasificado por la Comisión Nacional para el Estudio y Conocimiento de la Biodiversidad (Conabio) como región terrestre prioritaria, el Parque Nacional Cumbres de Monterrey (PNCM) se localiza en la zona oeste-centro de Nuevo León, en colindancia con Coahuila. </p>
+                                 <a id="enlace_2" href="#" onclick="muestraOculta('2'); return false;">Ocultar contenido</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-3">
+                            <img class="card-img-top" src="imagenes/casa3_sm.jpg" srcset="imagenes/casa3_sm.jpg 480w, imagenes/casa3_md.jpg 800w" alt="Contry">
+                            <div class="card-body">
+                                <h5>Contry</h5>
+                                <p id="contenidos_3">La historia de la colonia Contry en Monterrey tiene su principal origen en el deporte del golf, que llegó a nuestro país en la segunda mitad del siglo XX; las primeras ciudades donde se practicó, fueron Tampico, Ensenada, Pachuca y Orizaba. </p>
+                                 <a id="enlace_3" href="#" onclick="muestraOculta('3'); return false;">Ocultar contenido</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-3">
+                            <img class="card-img-top" src="imagenes/casa4_sm.jpg" srcset="imagenes/casa4_sm.jpg 480w, imagenes/casa4_md.jpg 800w"" alt="Santiago">
+                            <div class="card-body">
+                                <h5>Santiago</h5>
+                                <p id="contenidos_4"> Santiago es una localidad ubicada en el estado de Nuevo León, en el noreste de México. Es la cabecera del municipio homónimo. La localidad fue declarada "Pueblo Mágico" en el año 2006.</p>
+                                 <a id="enlace_4" href="#" onclick="muestraOculta('4'); return false;">Ocultar contenido</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+               
+            </div>
+   
+   
+        
+        
+    <br>
+    <br>
+    <br>
+   
+    <p id="resultado"></p>
+
+
+</main>
+<footer>
+    <div class="container">
+        &copy;2023 | RuizGaytan | BienesRaíces
+
+    </div>
+
+</footer>
+</body>
+</html>

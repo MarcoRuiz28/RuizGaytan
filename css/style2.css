@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+
+#Banner{
+    background-image: linear-gradient(180deg, #e4e5e673, #012aa64b);
+    backdrop-filter: blur(2px);
+}
+
+h1{
+    font-family: 'Kanit', sans-serif;
+    color: transparent;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: -0.0015em;
+    background-image: linear-gradient(180deg, #0e1dea96, #0111a6);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+
+ .nombreprincipal{
+    font-family: 'Kanit', sans-serif;
+    color: aliceblue;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: -0.0015em;
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.card img{
+    height: 200px;
+    object-fit: cover;
+}
+
+footer{
+    padding-top: 0.7rem;
+    background-color: #00000082;
+    backdrop-filter: blur(5px);
+    color: white;
+    height: 50px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#resultado{
+    text-align: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    font-size: 17px;
+}
+
+#Contenido {
+    width: 100%;
+    height: calc(100vh - 69px);
+    border: 0px;
+    /* margin-top: 65px; */
+}
